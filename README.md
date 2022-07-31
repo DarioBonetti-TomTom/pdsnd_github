@@ -10,7 +10,7 @@ The code import the data and answer interesting questions about it by computing 
 The data is provided by Motivate(https://www.motivateco.com/), a bike share system provider for many major cities in the United States.
 
 ### Files used
-BikeShare_7.py (this is the last file created without git Version Control) 
+BikeShare_7.py (this is the last file created without git Version Control). 
 Raw data which are files chicago.csv, new_york_city.csv, washington.csv have been added in the .gitignore
 
 ### Credits
