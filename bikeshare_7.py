@@ -11,29 +11,29 @@ def get_filters():
     while True:
         choose_city = input("Would you like to see data for Chicago, New York or Washington?\n").lower()
         if choose_city in ('chicago', 'new york', 'washington'):
-            print('the name of the city is correct!')
+            print('the name of the city is matching the list!')
             break
         else:
             print("the name of the city is not in the list!")
-    month_day_all = input("Would you like to filter the data by month, day, both, or not at all? Type \"all\" for no time filter:\n").lower()
+    month_day_all = input("Would you like to filter the data by Month, Day, both, or not at all? Type \"all\" for no time filter:\n").lower()
     if month_day_all == 'month':
-        print('We will make sure to filter by month!')
+        print('We will make sure to filter by Month!')
         while True:
-            month = input("Which month? January, February, March, April, May or June? Please type out the full month name:\n").lower()
+            month = input("Which Month? January, February, March, April, May or June? Please type out the full Month name:\n").lower()
             if month in ('january', 'february', 'march', 'april', 'may', 'june'):
                 break
             else:
-                print('That month is not on the list!')
+                print('That Month is not on the list!')
         day = 'all'
         city = choose_city.lower()
     if month_day_all == 'day':
-        print('We will make sure to filter by day!')
+        print('We will make sure to filter by Day!')
         while True:
-            day = input("Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday? Please type out the full day name:\n").lower()
+            day = input("Which Day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday? Please type out the full day name:\n").lower()
             if day in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
                 break
             else:
-                print('That day is not on the list!')
+                print('That Day is not on the list!')
         month = 'all'
         city = choose_city.lower()
     if month_day_all == 'all':
@@ -41,19 +41,19 @@ def get_filters():
         month = 'all'
         city = choose_city.lower()
     if month_day_all == 'both':
-        print('We will make sure to filter by month and day!')
+        print('We will make sure to filter by Month and Day!')
         while True:
-            month = input("Which month? January, February, March, April, May or June? Please type out the full month name:\n").lower()
+            month = input("Which Month? January, February, March, April, May or June? Please type out the full month name:\n").lower()
             if month in ('january', 'february', 'march', 'april', 'may', 'june'):
                 break
             else:
-                print('That month is not on the list!')
+                print('That Month is not on the list!')
         while True:
-            day = input("Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday? Please type out the full day name:\n").lower()
+            day = input("Which Day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday? Please type out the full day name:\n").lower()
             if day in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
                 break
             else:
-                print('That day is not on the list!')
+                print('That Day is not on the list!')
         city = choose_city.lower()
     print('Filters applied: {}, {}, {}'.format(city.title(), month.title(), day))
     print('-'*40)
