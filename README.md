@@ -12,5 +12,7 @@ BikeShare_7.py
 Also data in files chicago.csv, new_york_city.csv, washington.csv which are added in the .gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://stackoverflow.com
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html
+https://www.geeksforgeeks.org/different-ways-to-iterate-over-rows-in-pandas-dataframe/
+https://realpython.com/python-rounding/
