@@ -73,7 +73,7 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating The Most Frequent Travel Time...\n')
     start_time = time.time()
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     popular_month =  df['month'].value_counts().idxmax()
