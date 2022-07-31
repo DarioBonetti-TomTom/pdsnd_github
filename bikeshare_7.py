@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
@@ -129,7 +128,7 @@ def user_stats(df):
         print('\nThe counts of each Gender is: {}'.format(gender))
         print('\nwhat is the oldest, youngest, and most popular year of birth, respectively? {}; {}; {} (count: {})'.format(oldest, youngest, popular_year_birth, count_popular_year_birth))
     except KeyError:
-        print('\nNo birth year data to share')
+        print('\nThis selected combination of City/Month/Day has no birth year Data to share')
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
